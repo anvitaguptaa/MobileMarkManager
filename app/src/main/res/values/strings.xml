@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MVVM - Basic</string>
+    <string name="inc_button">Increment</string>
+    <string name="reset_button">Reset</string>
+    <string-array name="filter_spinner">
+        <item>All Courses</item>
+        <item>CS Only</item>
+        <item>Math Only</item>
+        <item>Other Only</item>
+    </string-array>
+    <string-array name="sorting_spinner">
+        <item>By Course Code</item>
+        <item>By Term</item>
+        <item>By Mark</item>
+    </string-array>
+    <string name="add_button"> + </string>
+    <string-array name="term_spinner">
+        <item>F20</item>
+        <item>W21</item>
+        <item>S21</item>
+        <item>F21</item>
+        <item>W22</item>
+        <item>S22</item>
+        <item>F22</item>
+        <item>W23</item>
+        <item>S23</item>
+        <item>F23</item>
+    </string-array>
+</resources>

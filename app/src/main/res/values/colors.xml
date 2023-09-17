@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="uw1">#FFFFFFAA</color>
+    <color name="uw2">#FFFFEA3D</color>
+    <color name="uw3">#FFFFD54F</color>
+    <color name="uw4">#FFE4B429</color>
+    <color name="math1">#FFFFBEEF</color>
+    <color name="math2">#FFFF63AA</color>
+    <color name="math3">#FFDF2498</color>
+    <color name="math4">#FFC60078</color>
+    <color name="topBar">#B5B3B4</color>
+    <color name="addButton">#009688</color>
+    <color name="wd_color">#2F4F4F</color>
+    <color name="fail_color">#F08080</color>
+    <color name="pass_color">#ADD8E6</color>
+    <color name="good_color">#90EE90</color>
+    <color name="excellent_color">#C0C0C0</color>
+    <color name="outstanding_color">#FFD700</color>
+
+</resources>

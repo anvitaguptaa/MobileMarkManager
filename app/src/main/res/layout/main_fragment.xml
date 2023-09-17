@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--constraint layout-->
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainFragment" >
+
+    <Spinner
+            android:id="@+id/filter_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:dropDownVerticalOffset="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/sorting_spinner"
+            app:layout_constraintEnd_toStartOf="@+id/sorting_spinner"/>
+
+    <Spinner
+            android:id="@+id/sorting_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:dropDownVerticalOffset="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/filter_spinner"
+            app:layout_constraintEnd_toStartOf="@+id/add_button"
+            app:layout_constraintBottom_toBottomOf="@+id/filter_spinner"
+            app:layout_constraintHorizontal_bias="2" />
+
+    <Button
+            android:id="@+id/add_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="@string/add_button"
+            android:background="@color/addButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/sorting_spinner" />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/course_list"
+            android:layout_width="409dp"
+            android:layout_height="682dp"
+            android:padding="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="49dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

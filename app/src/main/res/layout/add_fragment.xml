@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context=".AddFragment">
+
+<!--    Course Code     -->
+    <LinearLayout
+            android:id="@+id/courseLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+        <TextView android:id="@+id/course_code"
+                  android:text="Course Code*"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+
+                  android:autoSizeMinTextSize="20dp"
+                  android:layout_marginStart="15dp"
+                  android:layout_marginTop="20dp"/>
+
+            <EditText android:id="@+id/course_cell"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:inputType="text"
+
+                      android:layout_marginStart="15dp"
+                      android:layout_marginTop="20dp"
+                      android:layout_marginEnd="15dp"/>
+    </LinearLayout>
+
+<!--    Description     -->
+    <LinearLayout
+            android:id="@+id/descriptionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/courseLayout"
+            app:layout_constraintStart_toStartOf="@id/courseLayout"
+            android:layout_marginTop="10dp">
+
+        <TextView android:id="@+id/description"
+                  android:text="Description"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:autoSizeMinTextSize="20dp"
+                  android:layout_marginStart="15dp"
+                  android:layout_marginTop="10dp"/>
+        <EditText android:id="@+id/description_cell"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="text"
+                  android:layout_marginStart="15dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginEnd="15dp"/>
+    </LinearLayout>
+
+<!--    Marks   -->
+    <LinearLayout
+            android:id="@+id/markLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionLayout"
+            app:layout_constraintStart_toStartOf="@id/descriptionLayout"
+            android:layout_marginTop="10dp">
+
+        <TextView android:id="@+id/mark"
+                  android:text="Mark*"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:autoSizeMinTextSize="20dp"
+                  android:layout_marginStart="15dp"
+                  android:layout_marginTop="10dp"/>
+
+        <EditText android:id="@+id/mark_cell"
+                  android:layout_width="211dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="15dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginEnd="10dp"
+                  android:inputType="number"/>
+
+        <Switch
+                android:id="@+id/wd_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:text="WD'ed?"/>
+    </LinearLayout>
+
+<!--    Term    -->
+    <LinearLayout
+            android:id="@+id/termLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/markLayout"
+            app:layout_constraintStart_toStartOf="@id/markLayout"
+            android:layout_marginTop="10dp">
+
+        <TextView android:id="@+id/term"
+                  android:text="Term*"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:autoSizeMinTextSize="20dp"
+                  android:layout_marginStart="15dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginEnd="10dp"/>
+
+        <Spinner
+                android:id="@+id/term_spinner"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:dropDownVerticalOffset="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/termLayout"
+            app:layout_constraintStart_toStartOf="@id/termLayout"
+            android:id="@+id/cancel_button"
+            android:text="Cancel"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginEnd="10dp"/>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/termLayout"
+            app:layout_constraintStart_toStartOf="@id/termLayout"
+            android:id="@+id/create_button"
+            android:text="Create"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="292dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
