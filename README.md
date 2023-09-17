@@ -4,6 +4,7 @@ Mobile Mark Manager allows users the convenience of managing their academic jour
 
 
 
+https://github.com/anvitaguptaa/MobileMarkManager/assets/39174488/c3b6f9eb-a455-41f8-b979-cc8d328a5fb7
 
-https://github.com/anvitaguptaa/MobileMarkManager/assets/39174488/34cc5bb6-c37f-4e48-ba33-f881f4f94abb
+
 
